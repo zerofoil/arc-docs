@@ -8,12 +8,12 @@ Make a bounded HTTP request with headers and an optional body. Local/private net
 
 | Pin Name | Pin Type | Default Value | Pin Description |
 | :-: | :-: | :-: | :-: |
-| Exec | exec |  | Starts the HTTP request. |
-| URL | string |  | Public HTTP or HTTPS URL to request. |
+| Exec | exec | None | Starts the HTTP request. |
+| URL | string | None | Public HTTP or HTTPS URL to request. |
 | Method | string | GET | HTTP method used for the request. |
 | Headers (JSON) | string | \{\} | Request headers encoded as a JSON object. |
-| User-Agent | string |  | User-Agent header sent with the request. |
-| Body | string |  | Optional request body text. |
+| User-Agent | string | None | User-Agent header sent with the request. |
+| Body | string | None | Optional request body text. |
 | Timeout (ms) | number | 10000 | Maximum time to wait for the response, in milliseconds. |
 | Max response bytes | number | 1048576 | Maximum number of response bytes to read. |
 

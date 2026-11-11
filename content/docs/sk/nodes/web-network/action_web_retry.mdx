@@ -8,17 +8,17 @@ Retries temporary network errors and HTTP 408, 425, 429, and 5xx responses with 
 
 | Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
 | :-: | :-: | :-: | :-: |
-| Exec | exec |  | Starts the retrying HTTP request. |
-| URL | string |  | Public HTTP or HTTPS URL to request. |
+| Exec | exec | Žiadna | Starts the retrying HTTP request. |
+| URL | string | Žiadna | Public HTTP or HTTPS URL to request. |
 | Method | string | GET | HTTP method used for the request. |
 | Headers (JSON) | string | \{\} | Request headers encoded as a JSON object. |
-| User-Agent | string |  | User-Agent header sent with the request. |
-| Body | string |  | Optional request body text. |
+| User-Agent | string | Žiadna | User-Agent header sent with the request. |
+| Body | string | Žiadna | Optional request body text. |
 | Timeout (ms) | number | 10000 | Maximum time for each request attempt, in milliseconds. |
 | Max response bytes | number | 1048576 | Maximum number of response bytes to read. |
 | Max attempts | number | 3 | Maximum number of request attempts. |
 | Base retry delay (ms) | number | 500 | Base delay between retry attempts, in milliseconds. |
-| Retry POST/other methods | boolean | false | Allow retries for POST and other non-idempotent methods. |
+| Retry POST/other methods | boolean | Žiadna | Allow retries for POST and other non-idempotent methods. |
 
 ## Výstupy
 

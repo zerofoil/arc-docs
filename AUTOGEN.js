@@ -12,18 +12,33 @@ const outputDir = join(__dirname, "content/docs");
 
 const translations = JSON.parse(readFileSync(join(__dirname, "src/data/translations.json"), "utf-8"));
 
-const defaults = { "Pin Description": "Pin Description", "Inputs": "Inputs", "Outputs": "Outputs", "Pin Name": "Pin Name", "Pin Type": "Pin Type", "Default Value": "Default Value" };
+const defaults = {
+  "Pin Description": "Pin Description",
+  "Inputs": "Inputs",
+  "Outputs": "Outputs",
+  "Pin Name": "Pin Name",
+  "Pin Type": "Pin Type",
+  "Default Value": "Default Value",
+  "None": "None"
+};
 const t = (lang, key) => translations[lang]?.[`${key}(node info table)`] ?? defaults[key];
 
 const escape = s => String(s).replaceAll("{", "\\{").replaceAll("}", "\\}").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
 function generateMdx(obj, lang) {
-  const pin = t(lang, "Pin Name"), type = t(lang, "Pin Type"), def = t(lang, "Default Value"), inp = t(lang, "Inputs"), out = t(lang, "Outputs"), desc = t(lang, "Pin Description");
+  const
+    pin = t(lang, "Pin Name"),
+    type = t(lang, "Pin Type"),
+    def = t(lang, "Default Value"),
+    inp = t(lang, "Inputs"),
+    out = t(lang, "Outputs"),
+    desc = t(lang, "Pin Description"),
+    noDefault = t(lang, "None");
   let mdx = `---\ntitle: "${obj.label}"\n---\n\n${obj.description}\n`;
 
   if (obj.inputs?.length) {
     mdx += `\n## ${inp}\n\n| ${pin} | ${type} | ${def} | ${desc} |\n| :-: | :-: | :-: | :-: |\n`;
-    for (const i of obj.inputs) mdx += `| ${i.label} | ${i.type} | ${i.defaultValue ?? ""} | ${i.description ?? ""} |\n`;
+    for (const i of obj.inputs) mdx += `| ${i.label} | ${i.type} | ${i.defaultValue == "" ? noDefault : i.defaultValue ?? noDefault} | ${i.description ?? ""} |\n`;
   }
   if (obj.outputs?.length) {
     mdx += `\n## ${out}\n\n| ${pin} | ${type} | ${desc} |\n| :-: | :-: | :-: |\n`;
