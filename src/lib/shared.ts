@@ -3,7 +3,7 @@ import { createGetUrl } from "fumadocs-core/source";
 export const appName = "ARC Studio";
 export const appDescription = "Create Discord bot's using graphs, visually & easily.";
 export const appIcon = "/icon.png";
-export const appBanner = "/banner.png";
+export const appBanner = "/banner.png?c=off";
 export const appUri = "https://arc-docs.zerofoil.workers.dev";
 export const appWebsite = "https://none.yet";
 export const docsRoute = "/";
