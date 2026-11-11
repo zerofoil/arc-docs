@@ -2,14 +2,20 @@ import { Inter } from "next/font/google";
 import "./global.css";
 import type { ReactNode } from "react";
 import type { Metadata, Viewport } from "next";
-import { appDescription, appIcon, appName, appUri } from "@/lib/shared";
+import {
+  appDescription,
+  appIcon,
+  appName,
+  appUri,
+  appBanner,
+} from "@/lib/shared";
 
 const inter = Inter({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://arc-docs.zerofoil.workers.dev"), // TESTING PURPOSES | new URL(appUri),
+  metadataBase: new URL(appUri),
   title: {
     template: `%s | ${appName}`,
     default: `${appName} Documentation`,
@@ -20,12 +26,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     description: appDescription,
-    images: appIcon,
+    images: appBanner,
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     description: appDescription,
-    images: appIcon,
+    images: appBanner,
   },
   manifest: "/manifest.json",
 };

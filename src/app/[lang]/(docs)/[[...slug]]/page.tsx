@@ -9,7 +9,7 @@ import { notFound } from "next/navigation";
 import { getMDXComponents } from "@/components/mdx";
 import type { Metadata } from "next";
 import { createRelativeLink } from "fumadocs-ui/mdx";
-import { appDescription, appIcon, appName } from "@/lib/shared";
+import { appDescription, appBanner, appName } from "@/lib/shared";
 
 export default async function Page(props: PageProps<"/[lang]/[[...slug]]">) {
   const params = await props.params;
@@ -55,13 +55,13 @@ export async function generateMetadata(
     openGraph: {
       title: title,
       description: appDescription,
-      images: appIcon,
+      images: appBanner,
     },
     twitter: {
       card: "summary",
       title: title,
       description: appDescription,
-      images: appIcon,
+      images: appBanner,
     },
   };
 }
