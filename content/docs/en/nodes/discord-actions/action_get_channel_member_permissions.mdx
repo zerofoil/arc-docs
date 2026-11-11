@@ -6,17 +6,17 @@ Gets a member's channel permissions, including role and member overwrites.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Channel ID | string |  |
-| User ID | string |  |
-| Apply Implicit Masking | boolean | true |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Get Channel Member Permissions. |
+| Channel ID | string |  | ID of the channel whose permissions to check. |
+| User ID | string |  | ID of the user whose permissions to check. |
+| Apply Implicit Masking | boolean | true | Apply Discord implied permission rules to the result. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Permissions Bitfield | string |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Get Channel Member Permissions completes. |
+| Permissions Bitfield | string | Calculated permission bitfield. |
+| Success | boolean | Whether the action completed successfully. |

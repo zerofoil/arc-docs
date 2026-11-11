@@ -6,16 +6,16 @@ While Condition is true, waits at least 100 ms, runs Body once, and checks again
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Condition | boolean | true |
-| Interval (ms) | number | 500 |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts checking the loop condition. |
+| Condition | boolean | true | Repeats the Body branch while this value is true. |
+| Interval (ms) | number | 500 | Time to wait before each check and iteration, in milliseconds. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Body | exec |
-| Completed | exec |
-| Iteration | number |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Body | exec | Runs once for each loop iteration. |
+| Completed | exec | Runs when the condition becomes false. |
+| Iteration | number | One-based number of the current iteration. |

@@ -6,14 +6,14 @@ Generates secure cryptographic random hex, base64url tokens or numeric PINs
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Format (hex/base64url/pin) | string | hex |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts secure token generation. |
+| Format (hex/base64url/pin) | string | hex | Format for the generated token or PIN. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Token / PIN | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the token is generated. |
+| Token / PIN | string | Cryptographically secure token or numeric PIN. |

@@ -6,14 +6,14 @@ Runs when a WebSocket connection opens. Set Filter Connection ID to listen for o
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Filter Connection ID | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Filter Connection ID | string |  | Only handle events from this connection ID. Leave blank for all connections. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Connection ID | string |
-| URL | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a WebSocket connection opens. |
+| Connection ID | string | ID of the WebSocket connection. |
+| URL | string | URL used for the WebSocket connection. |

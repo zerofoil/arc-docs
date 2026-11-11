@@ -6,19 +6,19 @@ Checks a Discord Message object for explicit, gore, or self-harm content scan fl
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Message | object | [object Object] |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Message | object | [object Object] | Discord message whose attachments, embeds, and media to check. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Contains Explicit Content | boolean |
-| Contains Gore Content | boolean |
-| Contains Self-Harm Content | boolean |
-| Contains Flagged Content | boolean |
-| Scan Metadata Present | boolean |
-| Items With Scan Flags | number |
-| Flagged Items | number |
-| Findings | array |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Contains Explicit Content | boolean | True when an item has an explicit content scan flag. |
+| Contains Gore Content | boolean | True when an item has a gore content scan flag. |
+| Contains Self-Harm Content | boolean | True when an item has a self-harm content scan flag. |
+| Contains Flagged Content | boolean | True when any checked item has a content scan flag. |
+| Scan Metadata Present | boolean | True when scan metadata is available on the message. |
+| Items With Scan Flags | number | Number of items with scan metadata. |
+| Flagged Items | number | Number of items with one or more scan flags. |
+| Findings | array | Details for each item with scan metadata. |

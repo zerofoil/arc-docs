@@ -6,22 +6,22 @@ Fires for every new message. Server ID is empty in direct messages. Use Split Te
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Message Object | object |
-| Message ID | string |
-| Message Content | string |
-| Author ID | string |
-| Author Name | string |
-| Channel ID | string |
-| Thread ID | string |
-| Server ID | string |
-| Is Bot | boolean |
-| Has Mentions | boolean |
-| Mentioned Users | object |
-| Mentioned Roles | object |
-| Mentions Everyone | boolean |
-| Is Reply | boolean |
-| Replied Message ID | string |
-| Replied Author ID | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Runs for every new message. |
+| Message Object | object | The new Discord message. |
+| Message ID | string | ID of the message tied to this event. |
+| Message Content | string | Text content of the message. |
+| Author ID | string | ID of the message author. |
+| Author Name | string | Username of the message author. |
+| Channel ID | string | ID of the channel where the event occurred. |
+| Thread ID | string | ID of the thread where the event occurred. |
+| Server ID | string | ID of the server where the event occurred. |
+| Is Bot | boolean | Whether the message author is a bot. |
+| Has Mentions | boolean | Whether the message mentions any users. |
+| Mentioned Users | object | Users mentioned in the message. |
+| Mentioned Roles | object | Roles mentioned in the message. |
+| Mentions Everyone | boolean | Whether the message mentions everyone. |
+| Is Reply | boolean | Whether the message replies to another message. |
+| Replied Message ID | string | ID of the message being replied to. |
+| Replied Author ID | string | ID of the author of the replied message. |

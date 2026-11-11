@@ -6,14 +6,14 @@ Runs when a WebSocket connection opens. Set Filter Connection ID to listen for o
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Filter Connection ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Filter Connection ID | string |  | Only handle events from this connection ID. Leave blank for all connections. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Connection ID | string |
-| URL | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a WebSocket connection opens. |
+| Connection ID | string | ID of the WebSocket connection. |
+| URL | string | URL used for the WebSocket connection. |

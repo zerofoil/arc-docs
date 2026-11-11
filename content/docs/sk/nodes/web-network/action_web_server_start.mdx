@@ -6,26 +6,26 @@ Start a project-scoped HTTP server. Bind Host must be localhost or an IP address
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Port (0 for automatic) | number | 3001 |
-| Bind Host (IP or localhost) | string | 127.0.0.1 |
-| Legacy Fallback Route Path | string | / |
-| Legacy Fallback HTTP Method | string | GET |
-| Legacy Fallback Response Status | number | 200 |
-| Legacy Fallback Content Type | string | text/html; charset=utf-8 |
-| Legacy Fallback Response Template | string | &lt;h1&gt;Hello &lt;%= query.name %&gt;&lt;/h1&gt; |
-| Legacy Routes JSON | string | [] |
-| Legacy Static Files JSON | string | \{\} |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts the project web server. |
+| Port (0 for automatic) | number | 3001 | Port to bind, or zero to choose an available port. |
+| Bind Host (IP or localhost) | string | 127.0.0.1 | Local IP address or localhost to bind to. |
+| Legacy Fallback Route Path | string | / | Legacy fallback URL path. |
+| Legacy Fallback HTTP Method | string | GET | HTTP method accepted by the legacy fallback route. |
+| Legacy Fallback Response Status | number | 200 | HTTP status code returned by the legacy fallback route. |
+| Legacy Fallback Content Type | string | text/html; charset=utf-8 | MIME type returned by the legacy fallback route. |
+| Legacy Fallback Response Template | string | &lt;h1&gt;Hello &lt;%= query.name %&gt;&lt;/h1&gt; | Response template for the legacy fallback route. |
+| Legacy Routes JSON | string | [] | Legacy API route definitions encoded as JSON. |
+| Legacy Static Files JSON | string | \{\} | Legacy static file definitions encoded as JSON. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Started | boolean |
-| Active Port | number |
-| Server ID | string |
-| Local URL | string |
-| Error | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the web server starts. |
+| Started | boolean | True when the web server starts successfully. |
+| Active Port | number | Port assigned to the running server. |
+| Server ID | string | ID used to add routes or stop this web server. |
+| Local URL | string | Local URL of the running web server. |
+| Error | string | Error message, if the web server could not start. |

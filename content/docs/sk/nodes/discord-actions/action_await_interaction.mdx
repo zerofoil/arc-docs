@@ -6,28 +6,28 @@ Waits for an incoming button click or select menu interaction matching optional 
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Custom ID | string |  |
-| User ID | string |  |
-| Channel ID | string |  |
-| Message ID | string |  |
-| Timeout (s) | number | 60 |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Await Interaction. |
+| Custom ID | string |  | Custom ID to match on the interaction. |
+| User ID | string |  | Only accept interactions from this user. |
+| Channel ID | string |  | Only accept interactions from this channel. |
+| Message ID | string |  | Only accept interactions from this message. |
+| Timeout (s) | number | 60 | Maximum time to wait for a matching interaction. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Success | exec |
-| Filter Failed | exec |
-| Timeout | exec |
-| Interaction ID | string |
-| Interaction Token | string |
-| Custom ID | string |
-| User ID | string |
-| Channel ID | string |
-| Server ID | string |
-| Message ID | string |
-| Selected Values | string |
-| Interaction Object | object |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Success | exec | Continues after Await Interaction completes. |
+| Filter Failed | exec | Runs when the interaction does not match the filters. |
+| Timeout | exec | Runs when no matching interaction arrives before the timeout. |
+| Interaction ID | string | ID of the interaction that was handled. |
+| Interaction Token | string | Token used to continue responding to the interaction. |
+| Custom ID | string | Custom ID to match on the interaction. |
+| User ID | string | ID of the user who interacted. |
+| Channel ID | string | ID of the channel where the interaction occurred. |
+| Server ID | string | ID of the server where the interaction occurred. |
+| Message ID | string | ID of the message that received the interaction. |
+| Selected Values | string | Values selected in the received menu. |
+| Interaction Object | object | Full interaction received by this node. |

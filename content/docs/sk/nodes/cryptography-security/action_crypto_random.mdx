@@ -6,14 +6,14 @@ Generates secure cryptographic random hex, base64url tokens or numeric PINs
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Format (hex/base64url/pin) | string | hex |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts secure token generation. |
+| Format (hex/base64url/pin) | string | hex | Format for the generated token or PIN. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Token / PIN | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the token is generated. |
+| Token / PIN | string | Cryptographically secure token or numeric PIN. |

@@ -6,18 +6,18 @@ Acknowledge a slash command now and send its reply later. Connect Reply to Inter
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Interaction ID | string |  |
-| Interaction Token | string |  |
-| Ephemeral (Hidden) | boolean | false |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Defer Reply. |
+| Interaction ID | string |  | ID of the interaction to respond to. |
+| Interaction Token | string |  | Token used to respond to the interaction. |
+| Ephemeral (Hidden) | boolean | false | Whether to hide the interaction response from other users. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Interaction Token | string |
-| Interaction ID | string |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Defer Reply completes. |
+| Interaction Token | string | Token used to continue responding to the interaction. |
+| Interaction ID | string | ID of the interaction that was handled. |
+| Success | boolean | Whether the action completed successfully. |

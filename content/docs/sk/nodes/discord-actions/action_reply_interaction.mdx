@@ -6,26 +6,26 @@ Responds to an interaction within Discord’s 3 second initial response window, 
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Application ID | string |  |
-| Interaction ID | string |  |
-| Interaction Token | string |  |
-| Reply Content | string |  |
-| Embed (Optional) | embed |  |
-| Components (Optional) | object |  |
-| Files (optional) | object |  |
-| Ephemeral (Hidden) | boolean | false |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Reply to Interaction. |
+| Application ID | string |  | ID of the application that owns the interaction. |
+| Interaction ID | string |  | ID of the interaction to respond to. |
+| Interaction Token | string |  | Token used to respond to the interaction. |
+| Reply Content | string |  | Text to include in the interaction reply. |
+| Embed (Optional) | embed |  | Embed to include with the message. |
+| Components (Optional) | object |  | Message components to send or update. |
+| Files (optional) | object |  | Files to attach to the message. |
+| Ephemeral (Hidden) | boolean | false | Whether to hide the interaction response from other users. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Interaction ID | string |
-| Application ID | string |
-| Interaction Token | string |
-| Message ID | string |
-| Response Message | object |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Reply to Interaction completes. |
+| Interaction ID | string | ID of the interaction that was handled. |
+| Application ID | string | ID of the application that owns the interaction. |
+| Interaction Token | string | Token used to continue responding to the interaction. |
+| Message ID | string | ID of the message created by the action. |
+| Response Message | object | Message created as the interaction reply. |
+| Success | boolean | Whether the action completed successfully. |

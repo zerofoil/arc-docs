@@ -6,18 +6,18 @@ Closes an open WebSocket connection.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Connection ID | string | main |
-| Close Code | number | 1000 |
-| Reason | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts closing the WebSocket connection. |
+| Connection ID | string | main | ID of the connection to close. |
+| Close Code | number | 1000 | WebSocket close code to send. |
+| Reason | string |  | Reason sent when closing the connection. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Closed | exec |
-| Failed | exec |
-| Closed | boolean |
-| Error | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Closed | exec | Runs when the connection closes successfully. |
+| Failed | exec | Runs when the connection cannot be closed. |
+| Closed | boolean | True when the connection closed successfully. |
+| Error | string | Error message, if the connection could not be closed. |

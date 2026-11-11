@@ -6,14 +6,14 @@ Runs when bot startup begins. Optionally wait for the Gateway to connect.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Wait for Gateway | boolean | false |
-| Gateway Timeout (seconds) | number | 30 |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Wait for Gateway | boolean | false | Wait for the Discord Gateway before continuing. |
+| Gateway Timeout (seconds) | number | 30 | Maximum time to wait for the Gateway connection. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Gateway Connected | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when bot startup begins. |
+| Gateway Connected | boolean | Whether the Discord Gateway connected before the timeout. |

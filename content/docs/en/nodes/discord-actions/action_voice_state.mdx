@@ -6,17 +6,17 @@ Requests a Gateway voice-state change. Joining does not create an audio connecti
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
-| Voice Channel ID (blank leaves) | string |  |
-| Self Mute | boolean | false |
-| Self Deafen | boolean | false |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Request Voice Join / Leave. |
+| Server ID | string |  | ID of the server containing the voice channel. |
+| Voice Channel ID (blank leaves) | string |  | Voice channel ID to join, or blank to leave voice. |
+| Self Mute | boolean | false | Whether to join voice muted. |
+| Self Deafen | boolean | false | Whether to join voice deafened. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Request Voice Join / Leave completes. |
+| Success | boolean | Whether the action completed successfully. |

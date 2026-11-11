@@ -6,14 +6,14 @@ Checks whether a permission bitfield includes every selected Discord permission.
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Permissions Bitfield | string |  |
-| Permissions | arg | VIEW_CHANNEL |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Permissions Bitfield | string |  | Permission bitfield to check. |
+| Permissions | arg | VIEW_CHANNEL | Permission or permissions that must all be present. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Has Permission | boolean |
-| Valid Bitfield | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Has Permission | boolean | True when the bitfield includes every selected permission. |
+| Valid Bitfield | boolean | True when the input is a valid permission bitfield. |

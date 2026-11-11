@@ -6,16 +6,16 @@ Permanently deletes a channel. This cannot be undone. Requires Manage Channels.
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Channel ID | string |  |
-| Audit Log Reason | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Delete Channel. |
+| Channel ID | string |  | ID of the channel to delete. |
+| Audit Log Reason | string |  | Reason recorded in the audit log. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Deleted Channel ID | string |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Delete Channel completes. |
+| Deleted Channel ID | string | ID of the channel deleted by the action. |
+| Success | boolean | Whether the action completed successfully. |

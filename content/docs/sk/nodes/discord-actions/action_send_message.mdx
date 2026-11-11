@@ -6,24 +6,24 @@ Sends message text, embeds, attachments, and interactive components to a Discord
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Channel ID | string |  |
-| Thread ID (Optional) | string |  |
-| Content | string |  |
-| Embed (Optional) | embed |  |
-| Components (Optional) | object |  |
-| Files (optional) | object |  |
-| File Data URL / Base64 | string |  |
-| File Name | string | image.png |
-| Reply to Message ID | string |  |
-| Mention Replied User | boolean | false |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Send Message. |
+| Channel ID | string |  | ID of the channel where the message will be sent. |
+| Thread ID (Optional) | string |  | Optional thread ID where the message will be sent. |
+| Content | string |  | Message text to send or update. |
+| Embed (Optional) | embed |  | Embed to include with the message. |
+| Components (Optional) | object |  | Message components to send or update. |
+| Files (optional) | object |  | Files to attach to the message. |
+| File Data URL / Base64 | string |  | File contents as a data URL or base64 text. |
+| File Name | string | image.png | File name shown for the uploaded attachment. |
+| Reply to Message ID | string |  | ID of the message to reply to. |
+| Mention Replied User | boolean | false | Whether to mention the author of the replied message. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Message ID | string |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Send Message completes. |
+| Message ID | string | ID of the message created by the action. |
+| Success | boolean | Whether the action completed successfully. |

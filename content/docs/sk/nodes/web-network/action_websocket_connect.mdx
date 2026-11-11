@@ -6,20 +6,20 @@ Opens a WebSocket connection to a public host and waits until it is ready.
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Connection ID | string | main |
-| WebSocket URL | string |  |
-| Protocols | string |  |
-| Connect Timeout (ms) | number | 10000 |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts opening the WebSocket connection. |
+| Connection ID | string | main | ID to assign to the new connection. |
+| WebSocket URL | string |  | Public WebSocket URL to connect to. |
+| Protocols | string |  | Optional WebSocket subprotocols. |
+| Connect Timeout (ms) | number | 10000 | Maximum time to wait for the connection to open, in milliseconds. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Connected | exec |
-| Failed | exec |
-| Connection ID | string |
-| Connected | boolean |
-| Error | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Connected | exec | Runs when the connection opens. |
+| Failed | exec | Runs when the connection cannot be opened. |
+| Connection ID | string | ID assigned to the opened connection. |
+| Connected | boolean | True when the connection opened successfully. |
+| Error | string | Error message, if the connection could not be opened. |

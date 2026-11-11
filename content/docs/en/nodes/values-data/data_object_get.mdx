@@ -6,14 +6,14 @@ Reads a property or nested path by key (such as id or author.username). Check Ex
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Object | object | [object Object] |
-| Property | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Object | object | [object Object] | Object to read a property from. |
+| Property | string |  | Property name or nested path to read. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Value | arg |
-| Exists | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Value | arg | Value of the selected property, when it exists. |
+| Exists | boolean | True when the property exists. |

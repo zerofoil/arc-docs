@@ -6,16 +6,16 @@ Keeps items whose value (or selected property path) matches the chosen compariso
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Array | object |  |
-| Property path | string |  |
-| Comparison | string | equals |
-| Match value | arg |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Array | object |  | Array whose items to test. |
+| Property path | string |  | Optional property path to read from each item. |
+| Comparison | string | equals | Comparison to apply to each item or property. |
+| Match value | arg |  | Value used for the selected comparison. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Filtered items | object |
-| Count | number |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Filtered items | object | Items that match the selected comparison. |
+| Count | number | Number of items that matched. |

@@ -6,28 +6,28 @@ Fetches a member in a server and exposes the full member and user objects, roles
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
-| User ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Get Server Member. |
+| Server ID | string |  | ID of the server containing the member. |
+| User ID | string |  | ID of the member to retrieve. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Member Object | object |
-| User Object | object |
-| User ID | string |
-| Username | string |
-| Nickname | string |
-| Role IDs | object |
-| Avatar Hash | string |
-| Avatar URL | string |
-| Joined At | string |
-| Boosted Since | string |
-| Server Deafened | boolean |
-| Server Muted | boolean |
-| Membership Pending | boolean |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Get Server Member completes. |
+| Member Object | object | Full server member record returned by Discord. |
+| User Object | object | User account for the returned member. |
+| User ID | string | ID of the returned user. |
+| Username | string | Username of the returned user. |
+| Nickname | string | Nickname set for the server member. |
+| Role IDs | object | Role IDs assigned to the member. |
+| Avatar Hash | string | Avatar hash of the returned user. |
+| Avatar URL | string | URL of the returned user avatar. |
+| Joined At | string | Time the member joined the server. |
+| Boosted Since | string | Time the member began boosting the server. |
+| Server Deafened | boolean | Whether the server has deafened the member. |
+| Server Muted | boolean | Whether the server has muted the member. |
+| Membership Pending | boolean | Whether the member must complete membership screening. |
+| Success | boolean | Whether the action completed successfully. |

@@ -6,29 +6,29 @@ Retries temporary network errors and HTTP 408, 425, 429, and 5xx responses with 
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| URL | string |  |
-| Method | string | GET |
-| Headers (JSON) | string | \{\} |
-| User-Agent | string |  |
-| Body | string |  |
-| Timeout (ms) | number | 10000 |
-| Max response bytes | number | 1048576 |
-| Max attempts | number | 3 |
-| Base retry delay (ms) | number | 500 |
-| Retry POST/other methods | boolean | false |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts the retrying HTTP request. |
+| URL | string |  | Public HTTP or HTTPS URL to request. |
+| Method | string | GET | HTTP method used for the request. |
+| Headers (JSON) | string | \{\} | Request headers encoded as a JSON object. |
+| User-Agent | string |  | User-Agent header sent with the request. |
+| Body | string |  | Optional request body text. |
+| Timeout (ms) | number | 10000 | Maximum time for each request attempt, in milliseconds. |
+| Max response bytes | number | 1048576 | Maximum number of response bytes to read. |
+| Max attempts | number | 3 | Maximum number of request attempts. |
+| Base retry delay (ms) | number | 500 | Base delay between retry attempts, in milliseconds. |
+| Retry POST/other methods | boolean | false | Allow retries for POST and other non-idempotent methods. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Status | number |
-| Success (2xx) | boolean |
-| Response Body | string |
-| Response Headers (JSON) | string |
-| JSON | object |
-| Attempts | number |
-| Error | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after a request succeeds or retries are exhausted. |
+| Status | number | HTTP status code returned by the final response. |
+| Success (2xx) | boolean | True when the final response status is in the 2xx range. |
+| Response Body | string | Final response body text. |
+| Response Headers (JSON) | string | Final response headers encoded as a JSON object. |
+| JSON | object | Parsed JSON from the final response, when valid JSON. |
+| Attempts | number | Number of request attempts made. |
+| Error | string | Request error message, if all attempts failed. |

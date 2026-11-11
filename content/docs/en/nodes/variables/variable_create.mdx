@@ -6,16 +6,16 @@ Creates a graph or project variable when the graph runs. An existing variable wi
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Name | arg |  |
-| Value | arg |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts variable creation. |
+| Name | arg |  | Name for the new graph or project variable. |
+| Value | arg |  | Initial value assigned when the variable is created. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Variable | variable |
-| Value | arg |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the variable is available. |
+| Variable | variable | Reference to the created or existing variable. |
+| Value | arg | Initial value of the created variable. |

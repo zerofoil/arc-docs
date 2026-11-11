@@ -6,15 +6,15 @@ Runs the Body branch once per iteration, then continues from Completed. Iteratio
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Count | number | 1 |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts the counted loop. |
+| Count | number | 1 | Number of times to run the Body branch. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Body | exec |
-| Completed | exec |
-| Index (0-based) | number |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Body | exec | Runs once for each loop iteration. |
+| Completed | exec | Runs after all iterations finish. |
+| Index (0-based) | number | Zero-based index of the current iteration. |

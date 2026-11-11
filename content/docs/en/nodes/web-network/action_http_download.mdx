@@ -6,21 +6,21 @@ Downloads a public file over HTTP or HTTPS as a bounded binary attachment. Conne
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| URL | string |  |
-| User-Agent | string |  |
-| Timeout (ms) | number | 20000 |
-| Max file bytes | number | 20971520 |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts downloading the file. |
+| URL | string |  | Public HTTP or HTTPS URL of the file. |
+| User-Agent | string |  | User-Agent header sent with the request. |
+| Timeout (ms) | number | 20000 | Maximum time to wait for the download, in milliseconds. |
+| Max file bytes | number | 20971520 | Maximum number of file bytes to download. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| File | object |
-| File Name | string |
-| Content Type | string |
-| Bytes | number |
-| Error | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the download completes. |
+| File | object | Downloaded file data for a message or interaction reply. |
+| File Name | string | Suggested file name from the response or URL. |
+| Content Type | string | MIME type reported for the downloaded file. |
+| Bytes | number | Size of the downloaded file in bytes. |
+| Error | string | Download error message, if the request failed. |

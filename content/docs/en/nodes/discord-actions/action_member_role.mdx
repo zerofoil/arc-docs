@@ -6,18 +6,18 @@ Adds or removes a role from a guild member. Requires Manage Roles.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
-| User ID | string |  |
-| Role ID | string |  |
-| Operation | string | add |
-| Audit Log Reason | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Set Member Role. |
+| Server ID | string |  | ID of the server containing the member. |
+| User ID | string |  | ID of the member whose role will change. |
+| Role ID | string |  | ID of the role to assign or remove. |
+| Operation | string | add | Change to apply. |
+| Audit Log Reason | string |  | Reason recorded in the audit log. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Set Member Role completes. |
+| Success | boolean | Whether the action completed successfully. |

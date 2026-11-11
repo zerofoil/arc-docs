@@ -6,15 +6,15 @@ Computes SHA-256 or SHA-512 cryptographic hash digests
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Input Data | string |  |
-| Algorithm | string | sha256 |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts digest calculation. |
+| Input Data | string |  | Text to hash. |
+| Algorithm | string | sha256 | Hash algorithm used to create the digest. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Hash Digest | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the digest is calculated. |
+| Hash Digest | string | Hexadecimal cryptographic digest of the input. |

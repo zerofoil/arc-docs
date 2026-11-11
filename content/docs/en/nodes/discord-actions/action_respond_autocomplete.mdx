@@ -6,17 +6,17 @@ Returns up to 25 suggestions from a wired array of name and value objects.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Interaction ID | string |  |
-| Interaction Token | string |  |
-| Suggestions | object |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Respond to Autocomplete. |
+| Interaction ID | string |  | ID of the interaction to respond to. |
+| Interaction Token | string |  | Token used to respond to the interaction. |
+| Suggestions | object |  | Suggestions to return for the focused command option. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Suggestions Sent | number |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Respond to Autocomplete completes. |
+| Suggestions Sent | number | Number of suggestions sent to Discord. |
+| Success | boolean | Whether the action completed successfully. |

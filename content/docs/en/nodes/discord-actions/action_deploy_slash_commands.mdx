@@ -6,15 +6,15 @@ Deploys workspace slash commands when triggered by a server manager with Manage 
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Deploy Slash Commands. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Commands Deployed | number |
-| Succeeded | boolean |
-| Error | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Deploy Slash Commands completes. |
+| Commands Deployed | number | Number of slash commands deployed. |
+| Succeeded | boolean | Whether the action completed successfully. |
+| Error | string | Error message returned when the action fails. |

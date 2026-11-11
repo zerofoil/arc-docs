@@ -6,15 +6,15 @@ An audit log entry is created. Requires View Audit Log. Discord may merge channe
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Audit Log Entry ID | string |
-| Server ID | string |
-| Action Type ID | number |
-| Target ID | string |
-| Acting User ID | string |
-| Reason | string |
-| Changes | array |
-| Options | object |
-| Full Audit Log Entry | object |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when an audit log entry is created. |
+| Audit Log Entry ID | string | ID of the audit log entry. |
+| Server ID | string | ID of the server where the event occurred. |
+| Action Type ID | number | Discord audit log action type value. |
+| Target ID | string | ID of the object changed by the action. |
+| Acting User ID | string | ID of the user who triggered or was affected by the event. |
+| Reason | string | Reason recorded with the audit log entry. |
+| Changes | array | Fields changed in the audit log entry. |
+| Options | object | Arguments submitted with the command. |
+| Full Audit Log Entry | object | Full audit log entry. |

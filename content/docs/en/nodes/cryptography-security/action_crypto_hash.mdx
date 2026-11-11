@@ -6,15 +6,15 @@ Computes SHA-256 or SHA-512 cryptographic hash digests
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Input Data | string |  |
-| Algorithm | string | sha256 |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts digest calculation. |
+| Input Data | string |  | Text to hash. |
+| Algorithm | string | sha256 | Hash algorithm used to create the digest. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Hash Digest | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the digest is calculated. |
+| Hash Digest | string | Hexadecimal cryptographic digest of the input. |

@@ -71,6 +71,7 @@
     "Outputs(node info table)": "Výstupy",
     "Pin Name(node info table)": "Názov Pinu",
     "Pin Type(node info table)": "Typ Pinu",
-    "Default Value(node info table)": "Predvolená Hodnota"
+    "Default Value(node info table)": "Predvolená Hodnota",
+    "Pin Description(node info table)": "Popis Pinu"
   }
 }

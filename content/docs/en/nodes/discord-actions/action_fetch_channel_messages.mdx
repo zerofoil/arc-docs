@@ -6,22 +6,22 @@ Fetches up to 100 recent messages from a channel. Requires View Channel and Read
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Channel ID | string |  |
-| Limit | number | 50 |
-| Before Message ID | string |  |
-| After Message ID | string |  |
-| Around Message ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Get Channel Messages. |
+| Channel ID | string |  | ID of the channel to fetch messages from. |
+| Limit | number | 50 | Maximum number of messages to fetch. |
+| Before Message ID | string |  | Fetch messages older than this message ID. |
+| After Message ID | string |  | Fetch messages newer than this message ID. |
+| Around Message ID | string |  | Fetch messages around this message ID. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Messages | array |
-| Count | number |
-| First Message | object |
-| Last Message | object |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Get Channel Messages completes. |
+| Messages | array | Messages fetched from the channel. |
+| Count | number | Number of messages returned. |
+| First Message | object | Oldest message in the returned results. |
+| Last Message | object | Newest message in the returned results. |
+| Success | boolean | Whether the action completed successfully. |

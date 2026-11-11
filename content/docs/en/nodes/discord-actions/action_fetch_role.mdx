@@ -6,29 +6,29 @@ Fetches a server role and exposes its name, color, position, permissions, and fu
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
-| Role ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Get Role Info. |
+| Server ID | string |  | ID of the server containing the role. |
+| Role ID | string |  | ID of the role to fetch. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Role Object | object |
-| Role ID | string |
-| Name | string |
-| Color | number |
-| Color Hex | string |
-| Show Separately | boolean |
-| Mentionable | boolean |
-| Managed | boolean |
-| Position | number |
-| Permissions Bitfield | string |
-| Icon Hash | string |
-| Unicode Emoji | string |
-| Role Flags | number |
-| Role Tags | object |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Get Role Info completes. |
+| Role Object | object | Full role record returned by Discord. |
+| Role ID | string | ID of the returned role. |
+| Name | string | Name to assign. |
+| Color | number | Role color as an RGB integer. |
+| Color Hex | string | Role color in hexadecimal form. |
+| Show Separately | boolean | Whether the role appears separately in the member list. |
+| Mentionable | boolean | Whether users can mention the role. |
+| Managed | boolean | Whether Discord manages the role. |
+| Position | number | Position of the channel in its list. |
+| Permissions Bitfield | string | Calculated permission bitfield. |
+| Icon Hash | string | Custom role icon hash, when set. |
+| Unicode Emoji | string | Unicode emoji assigned to the role. |
+| Role Flags | number | Discord flags value. |
+| Role Tags | object | Metadata tags attached to the role. |
+| Success | boolean | Whether the action completed successfully. |

@@ -6,18 +6,18 @@ Updates bot status, optional activity, and optional custom status
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Status (online/dnd/idle) | string | online |
-| Activity Text | string | ARC Studio |
-| Activity Type | number | 0 |
-| Stream URL | string |  |
-| Custom Status | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Set Presence. |
+| Status (online/dnd/idle) | string | online | Presence status to set. Use blank to clear it when supported. |
+| Activity Text | string | ARC Studio | Text to show in the bot activity. |
+| Activity Type | number | 0 | Discord activity type value. |
+| Stream URL | string |  | URL for the streaming activity. |
+| Custom Status | string |  | Text for the bot custom status. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Set Presence completes. |
+| Success | boolean | Whether the action completed successfully. |

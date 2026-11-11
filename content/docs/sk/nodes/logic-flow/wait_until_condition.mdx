@@ -6,16 +6,16 @@ Checks a boolean condition until it becomes true. Times out through the Timed Ou
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Condition | boolean | false |
-| Timeout (ms) | number | 30000 |
-| Check Every (ms) | number | 250 |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts checking the condition. |
+| Condition | boolean | false | Waits until this value becomes true. |
+| Timeout (ms) | number | 30000 | Maximum time to wait before taking the Timed Out branch, in milliseconds. |
+| Check Every (ms) | number | 250 | Time between condition checks, in milliseconds. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Ready | exec |
-| Timed Out | exec |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Ready | exec | Runs when the condition becomes true. |
+| Timed Out | exec | Runs when the condition does not become true before the timeout. |

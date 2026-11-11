@@ -6,44 +6,44 @@ Fetches a channel and exposes its name, type, topic, slowmode, parent, and full 
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Channel ID | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Get Channel Info. |
+| Channel ID | string |  | ID of the channel to retrieve. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Channel Object | object |
-| Channel ID | string |
-| Channel ID | string |
-| Name | string |
-| Channel Type | number |
-| Server ID | string |
-| Parent ID | string |
-| Category ID | string |
-| Position | number |
-| Permission Overwrites | object |
-| Overwrite Count | number |
-| Topic | string |
-| Age Restricted | boolean |
-| Slowmode (seconds) | number |
-| Voice Bitrate | number |
-| Voice User Limit | number |
-| Voice Region | string |
-| Voice Video Quality Mode | number |
-| Default Thread Archive (minutes) | number |
-| Thread Slowmode | number |
-| Forum Tags | object |
-| Last Message ID | string |
-| Channel Flags | number |
-| Archived | boolean |
-| Locked | boolean |
-| Members Can Invite | boolean |
-| Thread Auto Archive (minutes) | number |
-| Message Count | number |
-| Member Count | number |
-| Metadata Obfuscated | boolean |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Get Channel Info completes. |
+| Channel Object | object | Full channel record returned by Discord. |
+| Channel ID | string | ID of the returned channel. |
+| Channel ID | string | ID of the channel to retrieve. |
+| Name | string | Name to assign. |
+| Channel Type | number | Discord channel type value. |
+| Server ID | string | ID of the server containing the channel. |
+| Parent ID | string | ID of the parent channel or category. |
+| Category ID | string | ID of the channel category. |
+| Position | number | Position of the channel in its list. |
+| Permission Overwrites | object | Permission overwrites configured for the channel. |
+| Overwrite Count | number | Number of permission overwrites. |
+| Topic | string | Current channel topic. |
+| Age Restricted | boolean | Whether the channel is age restricted. |
+| Slowmode (seconds) | number | Channel slowmode delay in seconds. |
+| Voice Bitrate | number | Voice channel bitrate in bits per second. |
+| Voice User Limit | number | Maximum number of users allowed in the voice channel. |
+| Voice Region | string | Voice region assigned to the channel. |
+| Voice Video Quality Mode | number | Voice video quality mode value. |
+| Default Thread Archive (minutes) | number | Default thread auto archive time in minutes. |
+| Thread Slowmode | number | Default thread slowmode in seconds. |
+| Forum Tags | object | Forum tags available in the channel. |
+| Last Message ID | string | ID of the latest message in the channel. |
+| Channel Flags | number | Discord flags value. |
+| Archived | boolean | Whether the thread is archived. |
+| Locked | boolean | Whether the thread is locked. |
+| Members Can Invite | boolean | Whether members can invite others to the thread. |
+| Thread Auto Archive (minutes) | number | Thread auto archive time in minutes. |
+| Message Count | number | Number of messages in the thread. |
+| Member Count | number | Approximate number of server members. |
+| Metadata Obfuscated | boolean | Whether Discord hid some channel metadata. |
+| Success | boolean | Whether the action completed successfully. |

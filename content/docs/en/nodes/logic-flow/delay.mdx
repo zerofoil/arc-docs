@@ -6,13 +6,13 @@ Awaits a short timer for this run. Other Discord events and graph runs continue 
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Duration (ms) | number | 1000 |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts the asynchronous wait. |
+| Duration (ms) | number | 1000 | Time to wait before continuing, in milliseconds. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the wait completes. |

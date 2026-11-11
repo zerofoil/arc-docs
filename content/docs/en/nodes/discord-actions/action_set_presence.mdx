@@ -6,18 +6,18 @@ Updates bot status, optional activity, and optional custom status
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Status (online/dnd/idle) | string | online |
-| Activity Text | string | ARC Studio |
-| Activity Type | number | 0 |
-| Stream URL | string |  |
-| Custom Status | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Set Presence. |
+| Status (online/dnd/idle) | string | online | Presence status to set. Use blank to clear it when supported. |
+| Activity Text | string | ARC Studio | Text to show in the bot activity. |
+| Activity Type | number | 0 | Discord activity type value. |
+| Stream URL | string |  | URL for the streaming activity. |
+| Custom Status | string |  | Text for the bot custom status. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Set Presence completes. |
+| Success | boolean | Whether the action completed successfully. |

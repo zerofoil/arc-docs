@@ -6,26 +6,26 @@ Fetches one message by channel and message ID. Requires View Channel and Read Me
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Channel ID | string |  |
-| Message ID | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Get Message. |
+| Channel ID | string |  | ID of the channel containing the message. |
+| Message ID | string |  | ID of the message to fetch. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Message Object | object |
-| Message ID | string |
-| Channel ID | string |
-| Content | string |
-| Author ID | string |
-| Timestamp | string |
-| Edited At | string |
-| Attachments | array |
-| Embeds | array |
-| Components | array |
-| Pinned | boolean |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Get Message completes. |
+| Message Object | object | Full message record returned by Discord. |
+| Message ID | string | ID of the fetched message. |
+| Channel ID | string | ID of the returned channel. |
+| Content | string | Text content of the message. |
+| Author ID | string | ID of the message author. |
+| Timestamp | string | Time the message was created. |
+| Edited At | string | Time the message was last edited. |
+| Attachments | array | Files attached to the message. |
+| Embeds | array | Embeds included in the message. |
+| Components | array | Components included in the message. |
+| Pinned | boolean | Whether the message is pinned. |
+| Success | boolean | Whether the action completed successfully. |

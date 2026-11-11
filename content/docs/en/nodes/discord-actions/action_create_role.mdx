@@ -6,21 +6,21 @@ Creates a role with a name, RGB color number, and mentionable setting. Requires 
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
-| Name | string | new role |
-| Color (RGB number) | number | 0 |
-| Permissions Bitfield | string | 0 |
-| Show separately | boolean | false |
-| Mentionable | boolean | false |
-| Audit Log Reason | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Create Role. |
+| Server ID | string |  | ID of the server to receive the new role. |
+| Name | string | new role | Name to assign. |
+| Color (RGB number) | number | 0 | Role color as an RGB integer. |
+| Permissions Bitfield | string | 0 | Role permission bitfield. |
+| Show separately | boolean | false | Whether to show the role separately in the member list. |
+| Mentionable | boolean | false | Whether users can mention the role. |
+| Audit Log Reason | string |  | Reason recorded in the audit log. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Role ID | string |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Create Role completes. |
+| Role ID | string | ID of the created role. |
+| Success | boolean | Whether the action completed successfully. |

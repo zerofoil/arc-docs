@@ -6,15 +6,15 @@ Stop one web server in this project by its Server ID.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Stops the selected project web server. |
+| Server ID | string |  | ID of the web server to stop. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Stopped | boolean |
-| Error | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the web server stop is handled. |
+| Stopped | boolean | True when the web server was stopped. |
+| Error | string | Error message, if the web server could not be stopped. |

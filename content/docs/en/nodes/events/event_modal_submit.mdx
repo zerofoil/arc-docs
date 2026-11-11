@@ -6,17 +6,17 @@ A modal is submitted
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Source Message Object | object |
-| Message ID | string |
-| Custom ID | string |
-| Submitted Values | object |
-| User ID | string |
-| Server ID | string |
-| Channel ID | string |
-| Thread ID | string |
-| Application ID | string |
-| Interaction ID | string |
-| Interaction Token | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a modal is submitted. |
+| Source Message Object | object | The message containing the submitted component. |
+| Message ID | string | ID of the message tied to this event. |
+| Custom ID | string | Custom ID of the submitted component. |
+| Submitted Values | object | Values submitted in the modal, keyed by field ID. |
+| User ID | string | ID of the user who triggered or was affected by the event. |
+| Server ID | string | ID of the server where the event occurred. |
+| Channel ID | string | ID of the channel where the event occurred. |
+| Thread ID | string | ID of the thread where the event occurred. |
+| Application ID | string | ID of the application that received the interaction. |
+| Interaction ID | string | ID of the interaction. |
+| Interaction Token | string | Token used to respond to the interaction. |

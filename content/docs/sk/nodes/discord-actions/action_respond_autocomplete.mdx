@@ -6,17 +6,17 @@ Returns up to 25 suggestions from a wired array of name and value objects.
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Interaction ID | string |  |
-| Interaction Token | string |  |
-| Suggestions | object |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Respond to Autocomplete. |
+| Interaction ID | string |  | ID of the interaction to respond to. |
+| Interaction Token | string |  | Token used to respond to the interaction. |
+| Suggestions | object |  | Suggestions to return for the focused command option. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Suggestions Sent | number |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Respond to Autocomplete completes. |
+| Suggestions Sent | number | Number of suggestions sent to Discord. |
+| Success | boolean | Whether the action completed successfully. |

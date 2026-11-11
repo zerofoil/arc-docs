@@ -6,17 +6,17 @@ Runs when a WebSocket message arrives. Binary data is provided as base64. Set Fi
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Filter Connection ID | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Filter Connection ID | string |  | Only handle events from this connection ID. Leave blank for all connections. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Connection ID | string |
-| Message | string |
-| Is Binary | boolean |
-| Byte Length | number |
-| URL | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a WebSocket message arrives. |
+| Connection ID | string | ID of the WebSocket connection. |
+| Message | string | Data received in the WebSocket message. |
+| Is Binary | boolean | Whether the WebSocket message contains binary data. |
+| Byte Length | number | Message size in bytes. |
+| URL | string | URL used for the WebSocket connection. |

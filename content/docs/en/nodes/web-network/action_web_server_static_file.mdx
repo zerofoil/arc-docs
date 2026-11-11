@@ -6,21 +6,21 @@ Serve one uploaded project media file at a URL path, including HTML, CSS, JavaSc
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
-| URL Path | string | /index.html |
-| Project Media File | string |  |
-| Bearer Token | string |  |
-| Content Type Override | string |  |
-| Response Status | number | 200 |
-| Response Headers (JSON) | string | \{\} |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts registering a static file route. |
+| Server ID | string |  | ID of the running web server. |
+| URL Path | string | /index.html | URL path where the file is served. |
+| Project Media File | string |  | Uploaded project media file to serve. |
+| Bearer Token | string |  | Token required to access the file. Supports text templates and connected values. |
+| Content Type Override | string |  | Optional MIME type override for the file. |
+| Response Status | number | 200 | HTTP status code returned for the file. |
+| Response Headers (JSON) | string | \{\} | Response headers encoded as a JSON object. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Registered | boolean |
-| Error | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the file route is registered. |
+| Registered | boolean | True when the file route was registered. |
+| Error | string | Error message, if the file route could not be registered. |

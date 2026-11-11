@@ -6,16 +6,16 @@ Sets or clears a voice channel status. Requires Set Voice Channel Status, Manage
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Voice Channel ID | string |  |
-| Status (blank clears) | string |  |
-| Audit Log Reason | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Set Voice Channel Status. |
+| Voice Channel ID | string |  | ID of the voice channel to update. |
+| Status (blank clears) | string |  | Status text to set, or blank to clear the current status. |
+| Audit Log Reason | string |  | Reason recorded in the audit log. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Set Voice Channel Status completes. |
+| Success | boolean | Whether the action completed successfully. |

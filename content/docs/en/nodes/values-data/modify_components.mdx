@@ -6,17 +6,17 @@ Updates legacy message buttons and select menus. Use Modify Components V2 for Co
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Components | object |  |
-| Target Custom ID ("all" for all) | string | all |
-| Disabled | boolean | true |
-| New Label (Optional) | string |  |
-| New Style (Optional) | string |  |
-| New Placeholder (Select Menus) | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Components | object |  | Legacy buttons and select menus to update. |
+| Target Custom ID ("all" for all) | string | all | Custom ID of the target component, or all to update every component. |
+| Disabled | boolean | true | Whether to disable the target component. |
+| New Label (Optional) | string |  | Optional replacement label for a button. |
+| New Style (Optional) | string |  | Optional replacement button style. |
+| New Placeholder (Select Menus) | string |  | Optional replacement placeholder for a select menu. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Components | object |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Components | object | Updated legacy message components. |

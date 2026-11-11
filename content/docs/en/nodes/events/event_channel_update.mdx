@@ -6,16 +6,16 @@ A channel is updated
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Channel ID | string |
-| Server ID | string |
-| Name | string |
-| Channel Type | number |
-| Category ID | string |
-| Topic | string |
-| Position | number |
-| NSFW | boolean |
-| Slowmode | number |
-| Permission Overwrites | array |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a channel is updated. |
+| Channel ID | string | ID of the channel where the event occurred. |
+| Server ID | string | ID of the server where the event occurred. |
+| Name | string | Current name of the event target. |
+| Channel Type | number | Discord channel type value. |
+| Category ID | string | ID of the parent channel or category. |
+| Topic | string | Channel topic, if set. |
+| Position | number | Channel position in the server. |
+| NSFW | boolean | Whether the channel is age restricted. |
+| Slowmode | number | Slowmode delay in seconds. |
+| Permission Overwrites | array | Channel-specific permission rules. |

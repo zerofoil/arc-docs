@@ -6,21 +6,21 @@ Uploads a PNG, APNG, or GIF sticker to a server. Requires Create Expressions. Fi
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
-| Sticker Name | string |  |
-| Description | string |  |
-| Tags (emoji) | string | ✨ |
-| Sticker File | object |  |
-| Audit Log Reason | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts uploading a sticker to the server. |
+| Server ID | string |  | ID of the server to receive the sticker. |
+| Sticker Name | string |  | Name to assign. |
+| Description | string |  | Description to assign. |
+| Tags (emoji) | string | ✨ | Emoji tags used to identify the sticker. |
+| Sticker File | object |  | Files to attach to the message. |
+| Audit Log Reason | string |  | Reason recorded in the audit log. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Sticker ID | string |
-| Sticker Name | string |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Upload Server Sticker completes. |
+| Sticker ID | string | ID of the created sticker. |
+| Sticker Name | string | Name of the created sticker. |
+| Success | boolean | Whether the action completed successfully. |

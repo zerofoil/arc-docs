@@ -6,17 +6,17 @@ Runs when a WebSocket message arrives. Binary data is provided as base64. Set Fi
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Filter Connection ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Filter Connection ID | string |  | Only handle events from this connection ID. Leave blank for all connections. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Connection ID | string |
-| Message | string |
-| Is Binary | boolean |
-| Byte Length | number |
-| URL | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a WebSocket message arrives. |
+| Connection ID | string | ID of the WebSocket connection. |
+| Message | string | Data received in the WebSocket message. |
+| Is Binary | boolean | Whether the WebSocket message contains binary data. |
+| Byte Length | number | Message size in bytes. |
+| URL | string | URL used for the WebSocket connection. |

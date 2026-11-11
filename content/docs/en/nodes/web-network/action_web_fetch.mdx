@@ -6,25 +6,25 @@ Make a bounded HTTP request with headers and an optional body. Local/private net
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| URL | string |  |
-| Method | string | GET |
-| Headers (JSON) | string | \{\} |
-| User-Agent | string |  |
-| Body | string |  |
-| Timeout (ms) | number | 10000 |
-| Max response bytes | number | 1048576 |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts the HTTP request. |
+| URL | string |  | Public HTTP or HTTPS URL to request. |
+| Method | string | GET | HTTP method used for the request. |
+| Headers (JSON) | string | \{\} | Request headers encoded as a JSON object. |
+| User-Agent | string |  | User-Agent header sent with the request. |
+| Body | string |  | Optional request body text. |
+| Timeout (ms) | number | 10000 | Maximum time to wait for the response, in milliseconds. |
+| Max response bytes | number | 1048576 | Maximum number of response bytes to read. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Status | number |
-| Success (2xx) | boolean |
-| Response Body | string |
-| Response Headers (JSON) | string |
-| JSON | object |
-| Error | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the response is received. |
+| Status | number | HTTP status code returned by the server. |
+| Success (2xx) | boolean | True when the response status is in the 2xx range. |
+| Response Body | string | Response body text. |
+| Response Headers (JSON) | string | Response headers encoded as a JSON object. |
+| JSON | object | Parsed JSON response body, when valid JSON. |
+| Error | string | Request error message, if the request failed. |

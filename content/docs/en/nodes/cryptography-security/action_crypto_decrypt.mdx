@@ -6,15 +6,15 @@ Decrypts and verifies AES-256-GCM authenticated envelopes
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Encrypted Envelope | string |  |
-| Passphrase (Optional) | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts decryption of the encrypted envelope. |
+| Encrypted Envelope | string |  | AES-256-GCM envelope to decrypt and authenticate. |
+| Passphrase (Optional) | string |  | Optional passphrase used to derive the decryption key. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Plaintext | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after decryption finishes. |
+| Plaintext | string | Authenticated plaintext from the envelope. |

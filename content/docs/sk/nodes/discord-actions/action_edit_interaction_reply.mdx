@@ -6,19 +6,19 @@ Edits the original reply to a slash command, button, or select menu interaction 
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Application ID | string |  |
-| Interaction Token | string |  |
-| New Content (Optional) | string |  |
-| Embed (Optional) | embed |  |
-| Components (Optional) | object |  |
-| Files (optional) | object |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Edit Interaction Reply. |
+| Application ID | string |  | ID of the application that owns the interaction. |
+| Interaction Token | string |  | Token used to respond to the interaction. |
+| New Content (Optional) | string |  | Replacement text for the original interaction reply. |
+| Embed (Optional) | embed |  | Embed to include with the message. |
+| Components (Optional) | object |  | Message components to send or update. |
+| Files (optional) | object |  | Files to attach to the message. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Success | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Edit Interaction Reply completes. |
+| Success | boolean | Whether the action completed successfully. |

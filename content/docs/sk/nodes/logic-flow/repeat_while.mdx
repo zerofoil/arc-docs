@@ -6,16 +6,16 @@ While Condition is true, waits at least 100 ms, runs Body once, and checks again
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Condition | boolean | true |
-| Interval (ms) | number | 500 |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts checking the loop condition. |
+| Condition | boolean | true | Repeats the Body branch while this value is true. |
+| Interval (ms) | number | 500 | Time to wait before each check and iteration, in milliseconds. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Body | exec |
-| Completed | exec |
-| Iteration | number |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Body | exec | Runs once for each loop iteration. |
+| Completed | exec | Runs when the condition becomes false. |
+| Iteration | number | One-based number of the current iteration. |

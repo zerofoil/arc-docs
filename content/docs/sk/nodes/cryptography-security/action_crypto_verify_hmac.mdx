@@ -6,16 +6,16 @@ Constant-time verification of HMAC signatures
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Payload | string |  |
-| Secret Key | string |  |
-| Expected Signature | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts signature verification. |
+| Payload | string |  | Text that was signed. |
+| Secret Key | string |  | Secret key used to create the expected signature. |
+| Expected Signature | string |  | HMAC signature to verify. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Is Valid | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the signature is checked. |
+| Is Valid | boolean | True when the signature matches the input and secret. |

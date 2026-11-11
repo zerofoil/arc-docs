@@ -6,16 +6,16 @@ Gets a role's combined guild permissions together with the @everyone role.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
-| Role ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Get Guild Role Permissions. |
+| Server ID | string |  | ID of the server whose permissions to check. |
+| Role ID | string |  | ID of the role whose permissions to check. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Permissions Bitfield | string |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Get Guild Role Permissions completes. |
+| Permissions Bitfield | string | Calculated permission bitfield. |
+| Success | boolean | Whether the action completed successfully. |

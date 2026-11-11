@@ -6,16 +6,16 @@ Deletes a message from a channel. Requires Manage Messages to delete messages fr
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Channel ID | string |  |
-| Message ID | string |  |
-| Audit Log Reason | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Delete Message. |
+| Channel ID | string |  | ID of the channel containing the message. |
+| Message ID | string |  | ID of the message to delete. |
+| Audit Log Reason | string |  | Reason recorded in the audit log. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Delete Message completes. |
+| Success | boolean | Whether the action completed successfully. |

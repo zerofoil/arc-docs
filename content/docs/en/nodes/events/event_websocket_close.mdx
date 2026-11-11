@@ -6,16 +6,16 @@ Runs when a WebSocket connection closes. Set Filter Connection ID to listen for 
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Filter Connection ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Filter Connection ID | string |  | Only handle events from this connection ID. Leave blank for all connections. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Connection ID | string |
-| Code | number |
-| Reason | string |
-| Was Clean | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a WebSocket connection closes. |
+| Connection ID | string | ID of the WebSocket connection. |
+| Code | number | Invite code. |
+| Reason | string | Reason recorded with the audit log entry. |
+| Was Clean | boolean | Whether the WebSocket connection closed cleanly. |

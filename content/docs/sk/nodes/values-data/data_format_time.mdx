@@ -6,16 +6,16 @@ Formats an ISO date or Unix millisecond timestamp using a locale, time zone, and
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Date / Timestamp | arg |  |
-| Time zone | string | UTC |
-| Date Format | string | DD/MM/YYYY - HH:mm:ss |
-| Is Duration | boolean | false |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Date / Timestamp | arg |  | ISO date or Unix timestamp in milliseconds to format. |
+| Time zone | string | UTC | Time zone used to format the date. |
+| Date Format | string | DD/MM/YYYY - HH:mm:ss | Date or time display style. |
+| Is Duration | boolean | false | Treat the input as a duration instead of a date. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Formatted time | string |
-| Valid | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Formatted time | string | Formatted date, time, or duration text. |
+| Valid | boolean | True when the input and formatting options are valid. |

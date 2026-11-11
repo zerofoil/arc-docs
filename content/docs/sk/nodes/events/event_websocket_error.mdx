@@ -6,15 +6,15 @@ Runs when a WebSocket connection encounters an error. Set Filter Connection ID t
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Filter Connection ID | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Filter Connection ID | string |  | Only handle events from this connection ID. Leave blank for all connections. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Connection ID | string |
-| Error | string |
-| URL | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a WebSocket connection encounters an error. |
+| Connection ID | string | ID of the WebSocket connection. |
+| Error | string | Error reported by the WebSocket connection. |
+| URL | string | URL used for the WebSocket connection. |

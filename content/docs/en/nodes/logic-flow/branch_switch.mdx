@@ -6,17 +6,17 @@ Compares one value with up to 50 cases and runs the first matching branch, or De
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Value | arg |  |
-| Case 1 | string |  |
-| Case 2 | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Checks the value against each case in order. |
+| Value | arg |  | Value compared with the configured cases. |
+| Case 1 | string |  | First value to compare against the input. |
+| Case 2 | string |  | Second value to compare against the input. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Case 1 | exec |
-| Case 2 | exec |
-| Default | exec |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Case 1 | exec | Runs when the input matches Case 1. |
+| Case 2 | exec | Runs when the input matches Case 2. |
+| Default | exec | Runs when no case matches the input. |

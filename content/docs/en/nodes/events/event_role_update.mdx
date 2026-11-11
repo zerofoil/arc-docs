@@ -6,19 +6,19 @@ A role is updated
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Role ID | string |
-| Server ID | string |
-| Name | string |
-| Color | number |
-| Show Separately | boolean |
-| Position | number |
-| Permissions | string |
-| Managed | boolean |
-| Mentionable | boolean |
-| Icon | string |
-| Unicode Emoji | string |
-| Flags | number |
-| Tags | object |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a role is updated. |
+| Role ID | string | ID of the role tied to this event. |
+| Server ID | string | ID of the server where the event occurred. |
+| Name | string | Current name of the event target. |
+| Color | number | Role color as an RGB value. |
+| Show Separately | boolean | Whether the role has its own member list. |
+| Position | number | Role position in the server. |
+| Permissions | string | Role permission bitfield. |
+| Managed | boolean | Whether an integration manages this role. |
+| Mentionable | boolean | Whether members can mention this role. |
+| Icon | string | Role icon hash, if set. |
+| Unicode Emoji | string | Role emoji, if set. |
+| Flags | number | Role flags bitfield. |
+| Tags | object | Integration and subscription role tags. |

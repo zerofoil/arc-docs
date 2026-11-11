@@ -6,13 +6,13 @@ Waits until an ISO date/time or Unix timestamp in milliseconds. Maximum wait is 
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Time (ISO or ms) | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts waiting for the target time. |
+| Time (ISO or ms) | string |  | ISO date or Unix timestamp in milliseconds to wait for. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues when the target time is reached. |

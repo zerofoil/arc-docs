@@ -6,24 +6,24 @@ Fetches a Discord server and exposes its full server object, owner, features, an
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Get Server Info. |
+| Server ID | string |  | ID of the server to fetch. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Server Object | object |
-| Server ID | string |
-| Name | string |
-| Owner ID | string |
-| Description | string |
-| Icon Hash | string |
-| Approx. Members | number |
-| Features | object |
-| Preferred Locale | string |
-| Verification Level | number |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Get Server Info completes. |
+| Server Object | object | Full server record returned by Discord. |
+| Server ID | string | ID of the returned server. |
+| Name | string | Name to assign. |
+| Owner ID | string | ID of the server owner. |
+| Description | string | Description to assign. |
+| Icon Hash | string | Icon hash for the returned server. |
+| Approx. Members | number | Approximate number of server members. |
+| Features | object | Features enabled for the server. |
+| Preferred Locale | string | Preferred locale for the server. |
+| Verification Level | number | Server verification level value. |
+| Success | boolean | Whether the action completed successfully. |

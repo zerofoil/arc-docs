@@ -6,16 +6,16 @@ Runs when a WebSocket connection closes. Set Filter Connection ID to listen for 
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Filter Connection ID | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Filter Connection ID | string |  | Only handle events from this connection ID. Leave blank for all connections. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Connection ID | string |
-| Code | number |
-| Reason | string |
-| Was Clean | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a WebSocket connection closes. |
+| Connection ID | string | ID of the WebSocket connection. |
+| Code | number | Invite code. |
+| Reason | string | Reason recorded with the audit log entry. |
+| Was Clean | boolean | Whether the WebSocket connection closed cleanly. |

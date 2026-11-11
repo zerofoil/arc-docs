@@ -6,16 +6,16 @@ Checks for a prefix, extracts the command, and parses whitespace-separated argum
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Message Content | string |  |
-| Prefix | string | ! |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Message Content | string |  | Message text to check and parse. |
+| Prefix | string | ! | Prefix that marks the start of a command. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Recognized | boolean |
-| Command | string |
-| Arguments | object |
-| Argument Count | number |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Recognized | boolean | True when the message starts with the prefix and contains a command. |
+| Command | string | Command name after the prefix. |
+| Arguments | object | Whitespace-separated command arguments. |
+| Argument Count | number | Number of parsed arguments. |

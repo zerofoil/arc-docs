@@ -6,13 +6,13 @@ A member joins, leaves, or changes voice state
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| User ID | string |
-| Server ID | string |
-| Channel ID | string |
-| Session ID | string |
-| Self Muted | boolean |
-| Self Deafened | boolean |
-| Self Streaming | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a member joins, leaves, or changes voice state. |
+| User ID | string | ID of the user who triggered or was affected by the event. |
+| Server ID | string | ID of the server where the event occurred. |
+| Channel ID | string | ID of the channel where the event occurred. |
+| Session ID | string | Voice session ID for the member. |
+| Self Muted | boolean | Whether the member muted themself. |
+| Self Deafened | boolean | Whether the member deafened themself. |
+| Self Streaming | boolean | Whether the member is sharing a stream. |

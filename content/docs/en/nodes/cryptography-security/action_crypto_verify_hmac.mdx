@@ -6,16 +6,16 @@ Constant-time verification of HMAC signatures
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Payload | string |  |
-| Secret Key | string |  |
-| Expected Signature | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts signature verification. |
+| Payload | string |  | Text that was signed. |
+| Secret Key | string |  | Secret key used to create the expected signature. |
+| Expected Signature | string |  | HMAC signature to verify. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Is Valid | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the signature is checked. |
+| Is Valid | boolean | True when the signature matches the input and secret. |

@@ -6,18 +6,18 @@ Sends text or base64 encoded binary data through an open WebSocket connection.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Connection ID | string | main |
-| Message | string |  |
-| Send as Binary | boolean | false |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts sending data through the WebSocket. |
+| Connection ID | string | main | ID of the open WebSocket connection to send through. |
+| Message | string |  | Text or base64 encoded binary data to send. |
+| Send as Binary | boolean | false | Send the message as base64 encoded binary data. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Sent | exec |
-| Failed | exec |
-| Sent | boolean |
-| Error | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Sent | exec | Runs when the message is sent. |
+| Failed | exec | Runs when the message cannot be sent. |
+| Sent | boolean | True when the message was sent. |
+| Error | string | Error message, if the message could not be sent. |

@@ -6,15 +6,15 @@ Safely reads a nested object or array path such as user.profile.name or items[0]
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Object / Array | object | [object Object] |
-| Path | string |  |
-| Fallback | arg |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Object / Array | object | [object Object] | Object or array to read from. |
+| Path | string |  | Property path to read, such as user.name or items[0].id. |
+| Fallback | arg |  | Value to return when the path does not exist. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Value or fallback | arg |
-| Exists | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Value or fallback | arg | Value at the path, or the fallback when the path is missing. |
+| Exists | boolean | True when the path exists. |

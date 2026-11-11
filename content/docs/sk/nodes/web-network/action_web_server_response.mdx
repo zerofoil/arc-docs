@@ -6,19 +6,19 @@ Send the response for an On Web Request event. Use If / Else to choose status, c
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Request ID | string |  |
-| Status | number | 200 |
-| Content Type | string | application/json; charset=utf-8 |
-| Headers (JSON) | string | \{\} |
-| Body | any |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts sending the HTTP response. |
+| Request ID | string |  | ID of the request to respond to. |
+| Status | number | 200 | HTTP status code to send. |
+| Content Type | string | application/json; charset=utf-8 | MIME type of the response body. |
+| Headers (JSON) | string | \{\} | Response headers encoded as a JSON object. |
+| Body | any |  | Response body sent to the requester. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Responded | boolean |
-| Error | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the response is handled. |
+| Responded | boolean | True when the response was sent. |
+| Error | string | Error message, if the response could not be sent. |

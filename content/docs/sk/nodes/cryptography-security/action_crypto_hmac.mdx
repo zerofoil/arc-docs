@@ -6,16 +6,16 @@ Generates HMAC signatures for API & webhook verification
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Payload | string |  |
-| Secret Key | string |  |
-| Algorithm | string | sha256 |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts HMAC signing. |
+| Payload | string |  | Text to sign. |
+| Secret Key | string |  | Secret key used to create the signature. |
+| Algorithm | string | sha256 | Hash algorithm used for HMAC. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Signature | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the signature is created. |
+| Signature | string | Hexadecimal HMAC signature for the input text. |

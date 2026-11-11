@@ -6,18 +6,18 @@ Distinguishes missing, null, empty text, and real values. The Value output uses 
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Value | arg |  |
-| Fallback | arg |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Value | arg |  | Value to check for missing, null, empty, or present state. |
+| Fallback | arg |  | Value to return when the input is missing, null, or empty. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Value or fallback | arg |
-| State | string |
-| Missing | boolean |
-| Null | boolean |
-| Empty text | boolean |
-| Has value | boolean |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Value or fallback | arg | Original value when present, otherwise the fallback. |
+| State | string | State detected for the input value. |
+| Missing | boolean | True when the input value is missing. |
+| Null | boolean | True when the input value is null. |
+| Empty text | boolean | True when the input is empty text. |
+| Has value | boolean | True when the input contains a usable value. |

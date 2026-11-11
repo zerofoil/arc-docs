@@ -6,13 +6,13 @@ Serializes a value to compact JSON. Cyclic or unsupported values return an empty
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Value | object |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Value | object |  | Value to serialize as JSON. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| JSON | string |
-| Valid | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| JSON | string | Compact JSON text for the input value. |
+| Valid | boolean | True when the value can be serialized. |

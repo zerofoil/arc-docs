@@ -6,18 +6,18 @@ Distinguishes missing, null, empty text, and real values. The Value output uses 
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Value | arg |  |
-| Fallback | arg |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Value | arg |  | Value to check for missing, null, empty, or present state. |
+| Fallback | arg |  | Value to return when the input is missing, null, or empty. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Value or fallback | arg |
-| State | string |
-| Missing | boolean |
-| Null | boolean |
-| Empty text | boolean |
-| Has value | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Value or fallback | arg | Original value when present, otherwise the fallback. |
+| State | string | State detected for the input value. |
+| Missing | boolean | True when the input value is missing. |
+| Null | boolean | True when the input value is null. |
+| Empty text | boolean | True when the input is empty text. |
+| Has value | boolean | True when the input contains a usable value. |

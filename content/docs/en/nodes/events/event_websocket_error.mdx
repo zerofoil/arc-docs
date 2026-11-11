@@ -6,15 +6,15 @@ Runs when a WebSocket connection encounters an error. Set Filter Connection ID t
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Filter Connection ID | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Filter Connection ID | string |  | Only handle events from this connection ID. Leave blank for all connections. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Connection ID | string |
-| Error | string |
-| URL | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when a WebSocket connection encounters an error. |
+| Connection ID | string | ID of the WebSocket connection. |
+| Error | string | Error reported by the WebSocket connection. |
+| URL | string | URL used for the WebSocket connection. |

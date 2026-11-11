@@ -6,20 +6,20 @@ Edits the content, embed, or components of an existing Discord message
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Channel ID | string |  |
-| Message ID | string |  |
-| Content | string |  |
-| Embed (Optional) | embed |  |
-| Components (Optional) | object |  |
-| Files (optional) | object |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Edit Message. |
+| Channel ID | string |  | ID of the channel containing the message. |
+| Message ID | string |  | ID of the message to edit. |
+| Content | string |  | Message text to send or update. |
+| Embed (Optional) | embed |  | Embed to include with the message. |
+| Components (Optional) | object |  | Message components to send or update. |
+| Files (optional) | object |  | Files to attach to the message. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Message ID | string |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Edit Message completes. |
+| Message ID | string | ID of the message created by the action. |
+| Success | boolean | Whether the action completed successfully. |

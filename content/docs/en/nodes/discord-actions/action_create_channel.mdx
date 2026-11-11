@@ -6,35 +6,35 @@ Creates a text, voice, category, announcement, stage, forum, or media channel. R
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
-| Name | string |  |
-| Channel Type | number | 0 |
-| Category ID | string |  |
-| Parent ID | string |  |
-| Permission Overwrites | object |  |
-| Topic | string |  |
-| Channel Flags | number | 0 |
-| Slowmode (seconds) | number | 0 |
-| Bitrate (bits/sec) | number | 64000 |
-| User Limit | number | 0 |
-| Position | number | 0 |
-| Voice Region | string |  |
-| Voice Video Quality Mode | number | 1 |
-| Default Thread Archive (minutes) | number | 1440 |
-| Thread Slowmode (seconds) | number | 0 |
-| Forum Tags | object |  |
-| Age Restricted | boolean | false |
-| Audit Log Reason | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Create Channel. |
+| Server ID | string |  | ID of the server where the channel will be created. |
+| Name | string |  | Name to assign. |
+| Channel Type | number | 0 | Discord channel type value. |
+| Category ID | string |  | Category ID alias for the parent channel. |
+| Parent ID | string |  | Optional parent channel or category ID. |
+| Permission Overwrites | object |  | Channel permission overwrites to apply. |
+| Topic | string |  | Channel topic to set. |
+| Channel Flags | number | 0 | Channel flags to set. |
+| Slowmode (seconds) | number | 0 | Slowmode delay in seconds. |
+| Bitrate (bits/sec) | number | 64000 | Voice channel bitrate in bits per second. |
+| User Limit | number | 0 | Maximum number of users allowed in the voice channel. |
+| Position | number | 0 | Position of the new channel in the channel list. |
+| Voice Region | string |  | Voice region for the new channel, or blank for automatic selection. |
+| Voice Video Quality Mode | number | 1 | Voice video quality mode value. |
+| Default Thread Archive (minutes) | number | 1440 | Default thread auto archive time in minutes. |
+| Thread Slowmode (seconds) | number | 0 | Default thread slowmode in seconds. |
+| Forum Tags | object |  | Forum tags to make available. |
+| Age Restricted | boolean | false | Whether to mark the channel as age restricted. |
+| Audit Log Reason | string |  | Reason recorded in the audit log. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Channel Object | object |
-| Channel ID | string |
-| Channel ID | string |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Create Channel completes. |
+| Channel Object | object | New channel record returned by Discord. |
+| Channel ID | string | ID of the created channel. |
+| Channel ID | string | ID of the returned channel. |
+| Success | boolean | Whether the action completed successfully. |

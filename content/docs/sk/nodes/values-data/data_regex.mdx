@@ -6,23 +6,23 @@ Tests, extracts, or replaces text with a JavaScript regular expression. Inputs a
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Text | string |  |
-| Pattern | string |  |
-| Flags | string |  |
-| Replacement | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Text | string |  | Text to test, extract from, or replace. |
+| Pattern | string |  | JavaScript regular expression pattern. |
+| Flags | string |  | Regular expression flags. Separate flags with commas or spaces, such as g, i. |
+| Replacement | string |  | Text placed in place of each match, limited to 2,000 characters. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Text | string |
-| Matched | boolean |
-| First Match | string |
-| All Matches | object |
-| Capture Groups | object |
-| Named Captures | object |
-| Index | number |
-| Valid | boolean |
-| Error | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Text | string | Resulting text after a test or replacement. |
+| Matched | boolean | True when the pattern matches the input. |
+| First Match | string | Text of the first match. |
+| All Matches | object | Up to 1,000 matched text values. |
+| Capture Groups | object | Capture groups from the first match. |
+| Named Captures | object | Named capture groups from the first match. |
+| Index | number | Zero-based position of the first match. |
+| Valid | boolean | True when the pattern and flags are valid. |
+| Error | string | Error details when the pattern is invalid or rejected. |

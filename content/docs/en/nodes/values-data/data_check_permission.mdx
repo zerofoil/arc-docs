@@ -6,14 +6,14 @@ Checks whether a permission bitfield includes every selected Discord permission.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Permissions Bitfield | string |  |
-| Permissions | arg | VIEW_CHANNEL |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Permissions Bitfield | string |  | Permission bitfield to check. |
+| Permissions | arg | VIEW_CHANNEL | Permission or permissions that must all be present. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Has Permission | boolean |
-| Valid Bitfield | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Has Permission | boolean | True when the bitfield includes every selected permission. |
+| Valid Bitfield | boolean | True when the input is a valid permission bitfield. |

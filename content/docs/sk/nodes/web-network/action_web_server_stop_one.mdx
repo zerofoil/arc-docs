@@ -6,15 +6,15 @@ Stop one web server in this project by its Server ID.
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Server ID | string |  |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Stops the selected project web server. |
+| Server ID | string |  | ID of the web server to stop. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Exec | exec |
-| Stopped | boolean |
-| Error | string |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the web server stop is handled. |
+| Stopped | boolean | True when the web server was stopped. |
+| Error | string | Error message, if the web server could not be stopped. |

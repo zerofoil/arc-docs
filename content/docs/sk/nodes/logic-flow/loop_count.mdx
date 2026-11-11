@@ -6,15 +6,15 @@ Runs the Body branch once per iteration, then continues from Completed. Iteratio
 
 ## Vstupy
 
-| Názov Pinu | Typ Pinu | Predvolená Hodnota |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Count | number | 1 |
+| Názov Pinu | Typ Pinu | Predvolená Hodnota | Popis Pinu |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts the counted loop. |
+| Count | number | 1 | Number of times to run the Body branch. |
 
 ## Výstupy
 
-| Názov Pinu | Typ Pinu |
-| :-: | :-: |
-| Body | exec |
-| Completed | exec |
-| Index (0-based) | number |
+| Názov Pinu | Typ Pinu | Popis Pinu |
+| :-: | :-: | :-: |
+| Body | exec | Runs once for each loop iteration. |
+| Completed | exec | Runs after all iterations finish. |
+| Index (0-based) | number | Zero-based index of the current iteration. |

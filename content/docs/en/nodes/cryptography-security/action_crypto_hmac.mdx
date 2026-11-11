@@ -6,16 +6,16 @@ Generates HMAC signatures for API & webhook verification
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Payload | string |  |
-| Secret Key | string |  |
-| Algorithm | string | sha256 |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts HMAC signing. |
+| Payload | string |  | Text to sign. |
+| Secret Key | string |  | Secret key used to create the signature. |
+| Algorithm | string | sha256 | Hash algorithm used for HMAC. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Signature | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after the signature is created. |
+| Signature | string | Hexadecimal HMAC signature for the input text. |

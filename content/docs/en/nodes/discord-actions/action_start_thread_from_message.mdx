@@ -6,21 +6,21 @@ Starts a public thread from an existing message in a text channel.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Parent Channel ID | string |  |
-| Message ID | string |  |
-| Thread Name | string |  |
-| Auto Archive (minutes) | number | 1440 |
-| Slowmode (seconds) | number | 0 |
-| Audit Log Reason | string |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Start Thread from Message. |
+| Parent Channel ID | string |  | ID of the channel containing the message. |
+| Message ID | string |  | ID of the message to start a thread from. |
+| Thread Name | string |  | Name to assign. |
+| Auto Archive (minutes) | number | 1440 | Thread auto archive time in minutes. |
+| Slowmode (seconds) | number | 0 | Slowmode delay in seconds. |
+| Audit Log Reason | string |  | Reason recorded in the audit log. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Thread ID | string |
-| Parent Channel ID | string |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Start Thread from Message completes. |
+| Thread ID | string | ID of the thread created by the action. |
+| Parent Channel ID | string | ID of the thread parent channel. |
+| Success | boolean | Whether the action completed successfully. |

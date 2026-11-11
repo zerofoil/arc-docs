@@ -6,16 +6,16 @@ Opens a configured Discord modal as the initial response to an interaction.
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Exec | exec |  |
-| Interaction ID | string |  |
-| Interaction Token | string |  |
-| Modal | object |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Exec | exec |  | Starts Show Popup Modal. |
+| Interaction ID | string |  | ID of the interaction to respond to. |
+| Interaction Token | string |  | Token used to respond to the interaction. |
+| Modal | object |  | Modal definition to show to the user. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Success | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Continues after Show Popup Modal completes. |
+| Success | boolean | Whether the action completed successfully. |

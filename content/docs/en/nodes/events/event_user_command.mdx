@@ -6,17 +6,17 @@ Fires when an app user context menu command is invoked on a user
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Exec | exec |
-| Command Name | string |
-| Target User ID | string |
-| Target User | object |
-| Target Member | object |
-| User ID | string |
-| Username | string |
-| Channel ID | string |
-| Server ID | string |
-| Application ID | string |
-| Interaction ID | string |
-| Interaction Token | string |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Exec | exec | Runs when an app user context menu command is invoked on a user. |
+| Command Name | string | Name of the invoked application command. |
+| Target User ID | string | ID of the user selected by the command. |
+| Target User | object | User selected by the command. |
+| Target Member | object | Server member selected by the command. |
+| User ID | string | ID of the user who triggered or was affected by the event. |
+| Username | string | Username of the user who triggered the event. |
+| Channel ID | string | ID of the channel where the event occurred. |
+| Server ID | string | ID of the server where the event occurred. |
+| Application ID | string | ID of the application that received the interaction. |
+| Interaction ID | string | ID of the interaction. |
+| Interaction Token | string | Token used to respond to the interaction. |

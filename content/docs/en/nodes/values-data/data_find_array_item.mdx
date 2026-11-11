@@ -6,16 +6,16 @@ Finds the first item equal to Value. Set Path to compare a nested property, such
 
 ## Inputs
 
-| Pin Name | Pin Type | Default Value |
-| :-: | :-: | :-: |
-| Array | object |  |
-| Property path | string |  |
-| Match value | arg |  |
+| Pin Name | Pin Type | Default Value | Pin Description |
+| :-: | :-: | :-: | :-: |
+| Array | object |  | Array to search. |
+| Property path | string |  | Optional property path to compare on each item. |
+| Match value | arg |  | Value to find in the array or selected property. |
 
 ## Outputs
 
-| Pin Name | Pin Type |
-| :-: | :-: |
-| Item | arg |
-| Index | number |
-| Found | boolean |
+| Pin Name | Pin Type | Pin Description |
+| :-: | :-: | :-: |
+| Item | arg | First matching item, when found. |
+| Index | number | Zero-based position of the first matching item. |
+| Found | boolean | True when a matching item exists. |
