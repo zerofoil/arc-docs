@@ -1,0 +1,22 @@
+---
+title: "Bulk Delete Messages"
+---
+
+Deletes 2 to 100 messages from a server channel. Messages older than 14 days cannot be bulk deleted. Requires Manage Messages.
+
+## Inputs
+
+| Pin Name | Pin Type | Default Value |
+| :-: | :-: | :-: |
+| Exec | exec |  |
+| Channel ID | string |  |
+| Message IDs | object |  |
+| Audit Log Reason | string |  |
+
+## Outputs
+
+| Pin Name | Pin Type |
+| :-: | :-: |
+| Exec | exec |
+| Deleted Count | number |
+| Success | boolean |

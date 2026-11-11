@@ -1,0 +1,33 @@
+---
+title: "Await Interaction"
+---
+
+Waits for an incoming button click or select menu interaction matching optional filters, with timeout and filter-failed branches.
+
+## Inputs
+
+| Pin Name | Pin Type | Default Value |
+| :-: | :-: | :-: |
+| Exec | exec |  |
+| Custom ID | string |  |
+| User ID | string |  |
+| Channel ID | string |  |
+| Message ID | string |  |
+| Timeout (s) | number | 60 |
+
+## Outputs
+
+| Pin Name | Pin Type |
+| :-: | :-: |
+| Success | exec |
+| Filter Failed | exec |
+| Timeout | exec |
+| Interaction ID | string |
+| Interaction Token | string |
+| Custom ID | string |
+| User ID | string |
+| Channel ID | string |
+| Server ID | string |
+| Message ID | string |
+| Selected Values | string |
+| Interaction Object | object |

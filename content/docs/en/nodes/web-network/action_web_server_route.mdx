@@ -1,0 +1,27 @@
+---
+title: "Add Web Route"
+---
+
+Register one API or page route on a started project web server. Route templates only read safe request values.
+
+## Inputs
+
+| Pin Name | Pin Type | Default Value |
+| :-: | :-: | :-: |
+| Exec | exec |  |
+| Server ID | string |  |
+| HTTP Method | string | GET |
+| Path | string | /api/hello |
+| Response Status | number | 200 |
+| Content Type | string | application/json; charset=utf-8 |
+| Response Headers (JSON) | string | \{\} |
+| Bearer Token | string |  |
+| Response Template | string | \{"ok":true\} |
+
+## Outputs
+
+| Pin Name | Pin Type |
+| :-: | :-: |
+| Exec | exec |
+| Registered | boolean |
+| Error | string |

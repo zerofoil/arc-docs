@@ -2,7 +2,7 @@
 title: "Create Channel"
 ---
 
-Creates a text, voice, category, announcement, or stage channel. Requires Manage Channels.
+Creates a text, voice, category, announcement, stage, forum, or media channel. Requires Manage Channels.
 
 ## Vstupy
 
@@ -11,10 +11,22 @@ Creates a text, voice, category, announcement, or stage channel. Requires Manage
 | Exec | exec |  |
 | Server ID | string |  |
 | Name | string |  |
-| Type | string | text |
+| Channel Type | number | 0 |
 | Category ID | string |  |
+| Parent ID | string |  |
 | Permission Overwrites | object |  |
 | Topic | string |  |
+| Channel Flags | number | 0 |
+| Slowmode (seconds) | number | 0 |
+| Bitrate (bits/sec) | number | 64000 |
+| User Limit | number | 0 |
+| Position | number | 0 |
+| Voice Region | string |  |
+| Voice Video Quality Mode | number | 1 |
+| Default Thread Archive (minutes) | number | 1440 |
+| Thread Slowmode (seconds) | number | 0 |
+| Forum Tags | object |  |
+| Age Restricted | boolean | false |
 | Audit Log Reason | string |  |
 
 ## Výstupy
@@ -22,5 +34,7 @@ Creates a text, voice, category, announcement, or stage channel. Requires Manage
 | Názov Pinu | Typ Pinu |
 | :-: | :-: |
 | Exec | exec |
+| Channel Object | object |
+| Channel ID | string |
 | Channel ID | string |
 | Success | boolean |

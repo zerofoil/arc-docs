@@ -1,0 +1,24 @@
+---
+title: "Check Content Scan"
+---
+
+Checks a Discord Message object for explicit, gore, or self-harm content scan flags on attachments, embeds, and Components V2 media. Flags may arrive later in On Message Updated, so missing flags do not mean the message is safe.
+
+## Inputs
+
+| Pin Name | Pin Type | Default Value |
+| :-: | :-: | :-: |
+| Message | object | [object Object] |
+
+## Outputs
+
+| Pin Name | Pin Type |
+| :-: | :-: |
+| Contains Explicit Content | boolean |
+| Contains Gore Content | boolean |
+| Contains Self-Harm Content | boolean |
+| Contains Flagged Content | boolean |
+| Scan Metadata Present | boolean |
+| Items With Scan Flags | number |
+| Flagged Items | number |
+| Findings | array |

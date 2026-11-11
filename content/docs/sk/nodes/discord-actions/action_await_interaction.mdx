@@ -1,0 +1,33 @@
+---
+title: "Await Interaction"
+---
+
+Waits for an incoming button click or select menu interaction matching optional filters, with timeout and filter-failed branches.
+
+## Vstupy
+
+| Názov Pinu | Typ Pinu | Predvolená Hodnota |
+| :-: | :-: | :-: |
+| Exec | exec |  |
+| Custom ID | string |  |
+| User ID | string |  |
+| Channel ID | string |  |
+| Message ID | string |  |
+| Timeout (s) | number | 60 |
+
+## Výstupy
+
+| Názov Pinu | Typ Pinu |
+| :-: | :-: |
+| Success | exec |
+| Filter Failed | exec |
+| Timeout | exec |
+| Interaction ID | string |
+| Interaction Token | string |
+| Custom ID | string |
+| User ID | string |
+| Channel ID | string |
+| Server ID | string |
+| Message ID | string |
+| Selected Values | string |
+| Interaction Object | object |

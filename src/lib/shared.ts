@@ -1,7 +1,7 @@
 import { createGetUrl } from "fumadocs-core/source";
 
 export const appName = "ARC Studio";
-export const appDescription = "Create Discord bots using visual nodes";
+export const appDescription = "Create Discord bot's using graphs, visually & easily.";
 export const appIcon = "/icon.png";
 export const appBanner = "/banner.png";
 export const appUri = "https://arc-docs.zerofoil.workers.dev";

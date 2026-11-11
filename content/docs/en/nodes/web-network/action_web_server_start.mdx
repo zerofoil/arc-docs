@@ -1,0 +1,31 @@
+---
+title: "Start Web Server"
+---
+
+Start a project-scoped HTTP server. Bind Host must be localhost or an IP address. Add route and static file nodes after it to serve paths.
+
+## Inputs
+
+| Pin Name | Pin Type | Default Value |
+| :-: | :-: | :-: |
+| Exec | exec |  |
+| Port (0 for automatic) | number | 3001 |
+| Bind Host (IP or localhost) | string | 127.0.0.1 |
+| Legacy Fallback Route Path | string | / |
+| Legacy Fallback HTTP Method | string | GET |
+| Legacy Fallback Response Status | number | 200 |
+| Legacy Fallback Content Type | string | text/html; charset=utf-8 |
+| Legacy Fallback Response Template | string | <h1>Hello <%= query.name %></h1> |
+| Legacy Routes JSON | string | [] |
+| Legacy Static Files JSON | string | \{\} |
+
+## Outputs
+
+| Pin Name | Pin Type |
+| :-: | :-: |
+| Exec | exec |
+| Started | boolean |
+| Active Port | number |
+| Server ID | string |
+| Local URL | string |
+| Error | string |

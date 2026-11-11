@@ -2,7 +2,7 @@
 title: "On Message Create"
 ---
 
-Fires for every new message. Use Split Text to break message content into parts.
+Fires for every new message. Server ID is empty in direct messages. Use Split Text to break message content into parts.
 
 ## Výstupy
 
@@ -15,6 +15,8 @@ Fires for every new message. Use Split Text to break message content into parts.
 | Author ID | string |
 | Author Name | string |
 | Channel ID | string |
+| Thread ID | string |
+| Server ID | string |
 | Is Bot | boolean |
 | Has Mentions | boolean |
 | Mentioned Users | object |

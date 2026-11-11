@@ -2,7 +2,7 @@
 title: "Edit Channel"
 ---
 
-Changes a channel name, topic, or category. Requires Manage Channels.
+Changes a channel name, topic, category, slowmode, or permissions. Requires Manage Channels.
 
 ## Inputs
 
@@ -14,12 +14,17 @@ Changes a channel name, topic, or category. Requires Manage Channels.
 | Name | string |  |
 | Topic | string |  |
 | Category ID | string |  |
+| Category ID (Alias) | string |  |
 | Permission Overwrites | object |  |
+| Position | number |  |
+| Channel Flags | number |  |
 | Slowmode (seconds) | number | 0 |
+| Thread Slowmode (seconds) | number |  |
+| Forum Tags | object |  |
 | Age restricted | boolean | false |
 | Voice bitrate | number | 64000 |
 | Voice user limit | number | 0 |
-| Voice region | string |  |
+| Voice Region | string |  |
 | Voice video quality mode | number |  |
 | Thread auto archive (minutes) | number |  |
 | Archived | boolean | false |
@@ -33,5 +38,7 @@ Changes a channel name, topic, or category. Requires Manage Channels.
 | Pin Name | Pin Type |
 | :-: | :-: |
 | Exec | exec |
+| Channel Object | object |
+| Channel ID | string |
 | Channel ID | string |
 | Success | boolean |
