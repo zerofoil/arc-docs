@@ -15,7 +15,7 @@ const translations = JSON.parse(readFileSync(join(__dirname, "src/data/translati
 const defaults = { "Inputs": "Inputs", "Outputs": "Outputs", "Pin Name": "Pin Name", "Pin Type": "Pin Type", "Default Value": "Default Value" };
 const t = (lang, key) => translations[lang]?.[`${key}(node info table)`] ?? defaults[key];
 
-const escape = s => String(s).replaceAll("{", "\\{").replaceAll("}", "\\}");
+const escape = s => String(s).replaceAll("{", "\\{").replaceAll("}", "\\}").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
 function generateMdx(obj, lang) {
   const pin = t(lang, "Pin Name"), type = t(lang, "Pin Type"), def = t(lang, "Default Value"), inp = t(lang, "Inputs"), out = t(lang, "Outputs");
