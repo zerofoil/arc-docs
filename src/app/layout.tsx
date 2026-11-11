@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(appUri),
+  metadataBase: new URL("https://arc-docs.zerofoil.workers.dev"), // TESTING PURPOSES | new URL(appUri),
   title: {
     template: `%s | ${appName}`,
     default: `${appName} Documentation`,

@@ -1,19 +1,21 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
-import { appIcon, appName, appWebsite, gitConfig } from './shared';
+import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
+import { appIcon, appName, appWebsite, gitConfig } from "./shared";
 
 export function baseOptions(locale: string): BaseLayoutProps {
   return {
     nav: {
-      title: <>
-        <img
-          src={appIcon}
-          alt=""
-          width={24}
-          height={24}
-          className="rounded"
-        />
-        {appName}
-      </>,
+      title: (
+        <>
+          <img
+            src={appIcon}
+            alt=""
+            width={24}
+            height={24}
+            className="rounded"
+          />
+          {appName}
+        </>
+      ),
     },
     links: [
       {
